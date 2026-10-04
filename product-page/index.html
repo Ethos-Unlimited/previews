@@ -1,148 +1,21 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>Product page candidates</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hedvig+Letters+Sans&display=swap">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Product page: A B C D</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Hedvig+Letters+Sans&display=swap">
 <style>
-:root{--bg:#F4F2FA;--surface:#fff;--ink:#3D332B;--body:#6B5D52;--muted:#988D83;--line:#E4E6ED;--accent:#5E4F94;--accent-soft:#EDE9F7;--good:#2E7C43;--good-soft:#EAF7E3;--display:'Fraunces',Georgia,serif;--text:'Hedvig Letters Sans',-apple-system,Helvetica,Arial,sans-serif}
-*{box-sizing:border-box}body{margin:0;background:#E9E6F0;font-family:var(--text);color:var(--body);font-size:15px;line-height:1.45}
-.page{width:1280px;margin:0 auto;padding:28px 0 60px}
-.intro{padding:0 40px 10px}.intro h1{font-family:var(--display);font-weight:500;font-size:34px;color:var(--ink);margin:0 0 4px}.intro p{margin:0;color:var(--body)}
-.cand{margin:34px 40px 0}
-.cand-head{display:flex;align-items:center;gap:14px;margin-bottom:10px}
-.letter{width:48px;height:48px;border-radius:12px;background:var(--ink);color:#fff;font:700 26px var(--text);display:flex;align-items:center;justify-content:center;flex:0 0 48px}
-.cand-head h2{font-family:var(--display);font-weight:500;font-size:24px;color:var(--ink);margin:0}
-.cand-head p{margin:2px 0 0;font-size:14px;color:var(--body);max-width:900px}
-.frame{width:1200px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 0 rgba(0,0,0,.04),0 18px 40px rgba(60,40,100,.14);border:1px solid #D9D5E3}
-.chrome{height:34px;background:#ECEAF1;border-bottom:1px solid #DDD9E4;display:flex;align-items:center;padding:0 14px;gap:7px}
-.chrome i{width:11px;height:11px;border-radius:50%;background:#D3CFDB}.chrome .url{margin-left:14px;background:#fff;border-radius:7px;height:20px;flex:1;max-width:420px;font-size:11px;color:#8B8597;display:flex;align-items:center;padding:0 10px}
-.site{background:var(--bg)}
-.banner{background:#2E4A3C;color:#fff;font-size:13px;text-align:center;padding:9px;display:flex;justify-content:center;align-items:center;gap:12px}.banner b{font-weight:600}.banner .shop{background:#fff;color:#2E4A3C;border-radius:999px;padding:4px 12px;font-weight:600;font-size:12px}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 56px;background:rgba(255,255,255,.7);border-bottom:1px solid var(--line)}
-.nav .logo{display:flex;align-items:center;gap:8px;font-family:var(--display);font-size:20px;color:var(--ink)}.nav .logo img{height:26px}
-.nav .links{display:flex;gap:26px;font-size:14px;color:var(--ink)}.nav .links .in{color:var(--accent)}
-.pdp{display:grid;grid-template-columns:1fr 440px;gap:48px;padding:30px 56px 40px}
-.gal{position:relative}.gal .main{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;display:block}
-.thumbs{display:flex;gap:10px;margin-top:12px}.thumbs img{width:calc((100% - 40px)/5);aspect-ratio:1;object-fit:cover;border-radius:10px;border:2px solid transparent}.thumbs img.on{border-color:var(--accent)}
-.chip{position:absolute;background:rgba(255,255,255,.92);border-radius:999px;padding:6px 12px;font-size:12px;color:var(--ink);font-weight:600}
-.stars{display:inline-flex;gap:2px}.stars i{width:16px;height:16px;background:#00B67A;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-style:normal}
-.tp{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink)}.tp b{text-decoration:underline}
-h1.t{font-family:var(--display);font-weight:500;font-size:40px;line-height:1.05;color:var(--ink);margin:10px 0 8px;letter-spacing:-.01em}
-.sub{font-size:16px;color:var(--body);margin:0 0 18px;line-height:1.45}
-.cta{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#fff;border-radius:999px;height:56px;font-size:19px;font-weight:700;width:100%}
-.cta span.ar{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.22);display:inline-flex;align-items:center;justify-content:center;font-size:14px}
-.trust{display:flex;justify-content:space-between;gap:10px;margin-top:14px;font-size:12.5px;color:var(--body)}.trust div{display:flex;align-items:center;gap:6px}.trust em{font-style:normal;color:var(--good);font-weight:700}
-.pay{display:flex;gap:6px;margin-top:12px}.pay span{border:1px solid var(--line);background:#fff;border-radius:6px;font-size:10px;font-weight:700;padding:5px 8px;color:#444}
-.fine{font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.4}
-.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:3px 9px}
-.tag.pop{background:var(--accent);color:#fff}.tag.save{background:var(--good-soft);color:var(--good)}
-/* B tiles */
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 16px}
-.tile{border:1.5px solid var(--line);border-radius:14px;padding:12px 10px 10px;background:#fff;text-align:center;position:relative}
-.tile.on{border-color:var(--accent);background:#F8F6FD;box-shadow:0 0 0 2px var(--accent-soft)}
-.tile .tag{position:absolute;top:-10px;left:50%;transform:translateX(-50%);white-space:nowrap}
-.tile .m{font-weight:700;color:var(--ink);font-size:15px}.tile .p{font-family:var(--display);font-size:24px;color:var(--ink);font-weight:600;margin:4px 0 0}.tile .pm{font-size:12px;color:var(--muted)}.tile .was{font-size:12px;color:var(--muted);text-decoration:line-through}
-.price{display:flex;align-items:baseline;gap:10px;margin:4px 0 2px}.price .now{font-family:var(--display);font-size:40px;font-weight:600;color:var(--ink)}.price .was{font-size:18px;color:var(--muted);text-decoration:line-through}
-.pricenote{font-size:14px;color:var(--body);margin-bottom:2px}
-.inc{list-style:none;padding:0;margin:6px 0 16px;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-size:14px;color:var(--ink)}.inc li::before{content:"✓ ";color:var(--good);font-weight:700}
-/* C rows */
-.rows{display:grid;gap:8px;margin:14px 0 16px}
-.row{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:12px;border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;background:#fff}
-.row.on{border-color:var(--accent);background:#F8F6FD;box-shadow:0 0 0 2px var(--accent-soft)}
-.radio{width:22px;height:22px;border-radius:50%;border:2px solid #C9C3D6;background:#fff}.row.on .radio{border:7px solid var(--accent)}
-.row .l b{display:block;color:var(--ink);font-size:16px}.row .l span{font-size:13px;color:var(--muted)}
-.row .r{text-align:right}.row .r b{display:block;font-family:var(--display);font-size:22px;color:var(--ink);font-weight:600}.row .r span{font-size:12px;color:var(--muted)}.row .r s{font-size:12px;color:var(--muted)}
-.bigpm{display:flex;align-items:baseline;gap:8px;margin-top:4px}.bigpm .n{font-family:var(--display);font-size:46px;font-weight:600;color:var(--ink);line-height:1}.bigpm .u{font-size:18px;color:var(--body)}
-.who{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 14px}
-.who>div{border:1.5px solid var(--line);border-radius:14px;padding:12px;background:#fff;display:flex;gap:10px;align-items:center}.who>div>div:last-child{min-width:0;flex:1}
-.who>div.on{border-color:var(--accent);background:#F8F6FD;box-shadow:0 0 0 2px var(--accent-soft)}
-.who .ic{flex:0 0 36px;width:36px;height:36px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-size:20px}
-.who b{display:block;color:var(--ink);font-size:15px}.who span{font-size:12px;display:block;line-height:1.25;color:var(--muted)}
-.lbl{font-size:13px;font-weight:700;color:var(--ink);margin:0 0 8px}
-.gal2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.gal2 img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;display:block}.gal2 img.big{grid-column:1/3;aspect-ratio:2/1.35}
-.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.benefits div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;font-size:13px;color:var(--ink);display:flex;gap:10px;align-items:center}.benefits i{font-style:normal;font-size:20px}
-.guar{display:flex;gap:12px;align-items:center;background:var(--accent-soft);border-radius:14px;padding:12px 16px;margin-top:14px;font-size:13.5px;color:var(--ink)}.guar b{display:block}.guar .sh{font-size:22px}
-.crop{height:1200px;overflow:hidden;position:relative}.crop img{width:1200px;display:block}
-.pstyle{display:inline-block;background:#fff;border:1px solid #D9D5E3;border-radius:999px;padding:3px 10px;font-size:12px;color:var(--accent);font-weight:700;margin-left:8px;vertical-align:middle}
-</style></head><body><div class="page">
-<div class="intro"><h1>Product page: four candidates, desktop</h1><p>A is the proposal as delivered. B, C, D are proper e-commerce product pages, each with a different way of showing the price. Above the fold only; everything below (FAQ, videos, reviews) stays as today.</p></div>
-
-<!-- A -->
-<div class="cand"><div class="cand-head"><div class="letter">A</div><div><h2>The proposal, as delivered <span class="pstyle">Price: red "Save up to 49%" pill + stacked plan cards + $177 extras list</span></h2><p>Gallery left, quiz offer card right. Two headlines compete (The Life Story Book, then How long do you want to write?). The left column ends at the guarantee while the right runs 2,000px. Red pill, green chips, violet card, orange label: four accent colors. Reads as the quiz sheet dropped onto a page.</p></div></div>
-<div class="frame"><div class="chrome"><i></i><i></i><i></i><div class="url">ethosbook.co/life-story</div></div><div class="crop"><img src="pdp-img/proposal-desktop.jpg" alt=""></div></div></div>
-
-<!-- B -->
-<div class="cand"><div class="cand-head"><div class="letter">B</div><div><h2>Classic buy box (IM8 / AG1 pattern) <span class="pstyle">Price: one big total, strike anchor, three plan tiles with per month</span></h2><p>One headline. Big image with thumbnails. Price first, plan tiles second, CTA, then the trust triple (money back, cancel any time, secure). Three accent colors at most.</p></div></div>
-<div class="frame"><div class="chrome"><i></i><i></i><i></i><div class="url">ethosbook.co/life-story</div></div><div class="site">
-<div class="banner"><b>Family History Month</b> · Save up to 54% on your family's book <span class="shop">Shop now →</span></div>
-<div class="nav"><div class="logo"><img src="pdp-img/logo.svg" alt="ethos"></div><div class="links"><span>About</span><span>Contact Us</span><span class="in">Sign in</span></div></div>
-<div class="pdp">
- <div class="gal"><img class="main" src="pdp-img/gallery-open-spread-hands.opt.webp" alt="">
-  <div class="thumbs"><img class="on" src="pdp-img/gallery-open-spread-hands.opt.webp"><img src="pdp-img/tile-7-books.jpg"><img src="pdp-img/gallery-mom-holding-book.opt.webp"><img src="pdp-img/love-we-kept-cover.webp"><img src="pdp-img/tile-2-book.jpg"></div></div>
- <div class="buy">
-  <div class="tp"><div class="stars"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div><b>Excellent</b> · 4.8 · 312 reviews on Trustpilot</div>
-  <h1 class="t">The Life Story Book</h1>
-  <p class="sub">One question a week, answered by phone. Printed as a hardcover memoir in their words.</p>
-  <div class="price"><span class="now">$89</span><span class="was">$193</span><span class="tag save">Save $104</span></div>
-  <div class="pricenote">6 months of writing, 1 hardcover book included</div>
-  <div class="tiles">
-   <div class="tile"><div class="m">3 months</div><div class="p">$68</div><div class="pm">$22.67 / month</div><div class="was">$98</div></div>
-   <div class="tile on"><span class="tag pop">Most popular</span><div class="m">6 months</div><div class="p">$89</div><div class="pm">$14.83 / month</div><div class="was">$193</div></div>
-   <div class="tile"><div class="m">12 months</div><div class="p">$127</div><div class="pm">$10.58 / month</div><div class="was">$248</div></div>
-  </div>
-  <ul class="inc"><li>1 hardcover book ($69)</li><li>Unlimited color photos</li><li>Weekly questions by email</li><li>E-book and audio copy</li></ul>
-  <div class="cta"><span class="ar">→</span>Start my book</div>
-  <div class="trust"><div><em>✓</em>30 day money back</div><div><em>✓</em>Cancel any time</div><div><em>✓</em>Secure checkout</div></div>
-  <div class="pay"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>Apple Pay</span><span>G Pay</span><span>PayPal</span></div>
-  <p class="fine">First 6 months $89, then month to month until your book is finished. <u>Subscription policy</u></p>
- </div></div></div></div></div>
-
-<!-- C -->
-<div class="cand"><div class="cand-head"><div class="letter">C</div><div><h2>Per-month framing (subscription first) <span class="pstyle">Price: big "$14.83 a month", total in the row, plan picker as plain radio rows</span></h2><p>Leads with the monthly number, the way IM8 shows "$78 /mo". Each row says what you pay today and per month. Two-image gallery, benefits strip underneath.</p></div></div>
-<div class="frame"><div class="chrome"><i></i><i></i><i></i><div class="url">ethosbook.co/life-story</div></div><div class="site">
-<div class="banner"><b>Family History Month</b> · Save up to 54% on your family's book <span class="shop">Shop now →</span></div>
-<div class="nav"><div class="logo"><img src="pdp-img/logo.svg" alt="ethos"></div><div class="links"><span>About</span><span>Contact Us</span><span class="in">Sign in</span></div></div>
-<div class="pdp">
- <div><div class="gal2"><img class="big" src="pdp-img/gallery-open-spread-hands.opt.webp"><img src="pdp-img/gallery-mom-holding-book.opt.webp" style="object-position:center 15%"><img src="pdp-img/tile-7-books.jpg"></div>
-  <div class="benefits"><div><i>📖</i>Hardcover included, unlimited color photos</div><div><i>📞</i>Answer by phone, nothing to type</div><div><i>🛡️</i>30 day money back guarantee</div></div></div>
- <div class="buy">
-  <div class="tp"><div class="stars"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div><b>Excellent</b> on Trustpilot</div>
-  <h1 class="t">The Life Story Book</h1>
-  <p class="sub">A professional memoir, written from one spoken answer a week.</p>
-  <div class="bigpm"><span class="n">$14.83</span><span class="u">a month</span></div>
-  <div class="pricenote">$89 today for 6 months. Book included. <s>$193</s></div>
-  <div class="rows">
-   <div class="row"><div class="radio"></div><div class="l"><b>3 months</b><span>A short memoir, 60 to 80 pages</span></div><div class="r"><b>$22.67 /mo</b><span>$68 today · <s>$98</s></span></div></div>
-   <div class="row on"><div class="radio"></div><div class="l"><b>6 months <span class="tag pop" style="margin-left:6px">Most popular</span></b><span>Most families finish here, 120 to 160 pages</span></div><div class="r"><b>$14.83 /mo</b><span>$89 today · <s>$193</s></span></div></div>
-   <div class="row"><div class="radio"></div><div class="l"><b>12 months <span class="tag save" style="margin-left:6px">Best value</span></b><span>A full life, 200 pages and more</span></div><div class="r"><b>$10.58 /mo</b><span>$127 today · <s>$248</s></span></div></div>
-  </div>
-  <div class="cta"><span class="ar">→</span>Start my book, $89</div>
-  <div class="trust"><div><em>✓</em>30 day money back</div><div><em>✓</em>Cancel any time</div><div><em>✓</em>Secure checkout</div></div>
-  <p class="fine">After 6 months it continues month to month until your book is finished. Cancel any time in your account or by email.</p>
- </div></div></div></div></div>
-
-<!-- D -->
-<div class="cand"><div class="cand-head"><div class="letter">D</div><div><h2>Plain words, gift choice on the page <span class="pstyle">Price: one price, strike anchor, plan rows in words; "For myself / A gift" as two big cards, not a slider</span></h2><p>Built for a 70 year old buyer. One price, one button. The who-is-it-for choice is two cards with icons on the product page itself, so the pop-up checkout opens already knowing. No per-month math.</p></div></div>
-<div class="frame"><div class="chrome"><i></i><i></i><i></i><div class="url">ethosbook.co/life-story</div></div><div class="site">
-<div class="banner"><b>Family History Month</b> · Save up to 54% on your family's book <span class="shop">Shop now →</span></div>
-<div class="nav"><div class="logo"><img src="pdp-img/logo.svg" alt="ethos"></div><div class="links"><span>About</span><span>Contact Us</span><span class="in">Sign in</span></div></div>
-<div class="pdp">
- <div class="gal"><img class="main" src="pdp-img/gallery-mom-holding-book.opt.webp" alt=""><div class="thumbs"><img class="on" src="pdp-img/gallery-mom-holding-book.opt.webp"><img src="pdp-img/gallery-open-spread-hands.opt.webp"><img src="pdp-img/love-we-kept-cover.webp"><img src="pdp-img/tile-2-book.jpg"><img src="pdp-img/tile-7-books.jpg"></div>
-  <div class="guar"><span class="sh">🛡️</span><div><b>30 day money back guarantee</b>No questions asked. Fewer than 1% of families ask for their money back.</div></div></div>
- <div class="buy">
-  <h1 class="t" style="margin-top:0">The Life Story Book</h1>
-  <div class="tp" style="margin-bottom:14px"><div class="stars"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div><b>Excellent</b> · Loved by 2,400 American families</div>
-  <div class="price"><span class="now">$89</span><span class="was">$193</span><span class="tag save">You save $104</span></div>
-  <div class="pricenote" style="margin-bottom:16px">Hardcover book, 6 months of weekly questions, unlimited photos in color.</div>
-  <p class="lbl">Who is the book about?</p>
-  <div class="who"><div class="on"><div class="ic">🙋</div><div><b>Myself</b><span>I will answer the questions</span></div></div><div><div class="ic">🎁</div><div><b>A gift</b><span>Mom, Dad, a grandparent</span></div></div></div>
-  <p class="lbl">How long do they write?</p>
-  <div class="rows" style="margin-top:0">
-   <div class="row"><div class="radio"></div><div class="l"><b>3 months</b><span>A short book</span></div><div class="r"><b>$68</b><s>$98</s></div></div>
-   <div class="row on"><div class="radio"></div><div class="l"><b>6 months</b><span>Most families choose this</span></div><div class="r"><b>$89</b><s>$193</s></div></div>
-   <div class="row"><div class="radio"></div><div class="l"><b>12 months</b><span>A full life story</span></div><div class="r"><b>$127</b><s>$248</s></div></div>
-  </div>
-  <div class="cta"><span class="ar">→</span>Start my book</div>
-  <div class="trust"><div><em>✓</em>30 day money back</div><div><em>✓</em>Cancel any time</div><div><em>✓</em>Secure checkout</div></div>
-  <div class="pay"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>Apple Pay</span><span>G Pay</span><span>PayPal</span></div>
- </div></div></div></div></div>
+body{margin:0;background:#E9E6F0;font-family:'Hedvig Letters Sans',-apple-system,sans-serif;color:#6B5D52}
+.wrap{max-width:1640px;margin:0 auto;padding:28px 24px 60px}
+h1{font-family:Fraunces,serif;font-weight:500;font-size:30px;color:#3D332B;margin:0 0 4px}.sub{margin:0 0 8px;font-size:15px}
+.nav{display:flex;gap:10px;margin:10px 0 24px;flex-wrap:wrap}.nav a{background:#fff;border:1px solid #D9D5E3;border-radius:999px;padding:6px 14px;color:#5E4F94;text-decoration:none;font-weight:700;font-size:14px}
+.cand{margin:0 0 54px}.head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.letter{width:44px;height:44px;border-radius:11px;background:#3D332B;color:#fff;font-weight:700;font-size:24px;display:flex;align-items:center;justify-content:center}
+.head h2{font-family:Fraunces,serif;font-weight:500;font-size:22px;color:#3D332B;margin:0}.head p{margin:2px 0 0;font-size:14px}
+.pair{display:grid;grid-template-columns:1fr 390px;gap:24px;align-items:start}
+.pair img{width:100%;display:block;border-radius:14px;box-shadow:0 14px 34px rgba(60,40,100,.14);border:1px solid #D9D5E3}
+@media (max-width:1100px){.pair{grid-template-columns:1fr}.pair img.m{width:390px;max-width:100%}}
+</style></head><body><div class="wrap">
+<h1>Product page: four candidates</h1><p class="sub">Desktop left, phone right. Above the fold only. Pick a letter.</p>
+<div class="nav"><a href="#a">A</a><a href="#b">B</a><a href="#c">C</a><a href="#d">D</a><a href="all-candidates.png">Desktop, one PNG</a><a href="all-mobile.png">Mobile, one PNG</a><a href="desktop.html">Desktop HTML</a><a href="mobile.html">Mobile HTML</a></div>
+<div class="cand" id="a"><div class="head"><div class="letter">A</div><div><h2>The proposal, as delivered</h2><p>Quiz card in a page. Two headlines, four accent colors.</p></div></div><div class="pair"><img src="desktop-A.png" alt="A desktop"><img class="m" src="mobile-A.png" alt="A mobile"></div></div>
+<div class="cand" id="b"><div class="head"><div class="letter">B</div><div><h2>Classic buy box</h2><p>Big total, strike anchor, three plan tiles with per month, trust triple under the button.</p></div></div><div class="pair"><img src="desktop-B.png" alt="B desktop"><img class="m" src="mobile-B.png" alt="B mobile"></div></div>
+<div class="cand" id="c"><div class="head"><div class="letter">C</div><div><h2>Per month</h2><p>$14.83 a month leads. Each row shows per month and what you pay today.</p></div></div><div class="pair"><img src="desktop-C.png" alt="C desktop"><img class="m" src="mobile-C.png" alt="C mobile"></div></div>
+<div class="cand" id="d"><div class="head"><div class="letter">D</div><div><h2>Plain words, gift on the page</h2><p>One price. Myself / A gift as two cards, not a slider. Plan rows in words.</p></div></div><div class="pair"><img src="desktop-D.png" alt="D desktop"><img class="m" src="mobile-D.png" alt="D mobile"></div></div>
 </div></body></html>

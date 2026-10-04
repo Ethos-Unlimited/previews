@@ -24,6 +24,7 @@ h1.t{font-family:var(--display);font-weight:500;font-size:30px;line-height:1.08;
 .cta .ar{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.22);display:inline-flex;align-items:center;justify-content:center;font-size:14px}
 .trust{display:flex;justify-content:space-between;gap:6px;margin-top:12px;font-size:12px;color:var(--body)}.trust div{display:flex;align-items:center;gap:4px}.trust em{font-style:normal;color:var(--good);font-weight:700}
 .pay{display:flex;gap:5px;margin-top:10px;flex-wrap:wrap}.pay span{border:1px solid var(--line);background:#fff;border-radius:6px;font-size:10px;font-weight:700;padding:4px 7px;color:#444}
+.subnote{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:13.5px;line-height:1.35;color:var(--ink);margin:0 0 14px}.subnote i{font-style:normal;font-size:18px;line-height:1;color:var(--accent)}.subnote b{font-weight:700}
 .fine{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.4}
 .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:3px 8px}.tag.pop{background:var(--accent);color:#fff}.tag.save{background:var(--good-soft);color:var(--good)}
 .price{display:flex;align-items:baseline;gap:8px;margin:2px 0 2px;flex-wrap:wrap}.price .now{font-family:var(--display);font-size:38px;font-weight:600;color:var(--ink)}.price .was{font-size:17px;color:var(--muted);text-decoration:line-through}
@@ -32,7 +33,7 @@ h1.t{font-family:var(--display);font-weight:500;font-size:30px;line-height:1.08;
 .tile{border:1.5px solid var(--line);border-radius:14px;padding:12px 6px 10px;background:#fff;text-align:center;position:relative}.tile.on{border-color:var(--accent);background:#F8F6FD;box-shadow:0 0 0 2px var(--accent-soft)}
 .tile .tag{position:absolute;top:-10px;left:50%;transform:translateX(-50%);white-space:nowrap}
 .tile .m{font-weight:700;color:var(--ink);font-size:14px}.tile .p{font-family:var(--display);font-size:24px;color:var(--ink);font-weight:600;margin:3px 0 0}.tile .pm{font-size:11px;color:var(--muted)}.tile .was{font-size:11px;color:var(--muted);text-decoration:line-through}
-.inc{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:5px;font-size:14px;color:var(--ink)}.inc li::before{content:"✓ ";color:var(--good);font-weight:700}
+.inc{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:5px;font-size:14px;color:var(--ink)}.inc li::before{content:"â ";color:var(--good);font-weight:700}
 .rows{display:grid;gap:8px;margin:12px 0 14px}
 .row{display:grid;grid-template-columns:24px 1fr auto;align-items:center;gap:10px;border:1.5px solid var(--line);border-radius:14px;padding:12px 12px;background:#fff}.row.on{border-color:var(--accent);background:#F8F6FD;box-shadow:0 0 0 2px var(--accent-soft)}
 .radio{width:22px;height:22px;border-radius:50%;border:2px solid #C9C3D6;background:#fff}.row.on .radio{border:7px solid var(--accent)}
@@ -55,12 +56,12 @@ h1.t{font-family:var(--display);font-weight:500;font-size:30px;line-height:1.08;
 
 <div class="cell"><div class="head"><div class="letter">B</div><h2>Classic buy box</h2></div>
 <div class="phone"><div class="site">
-<div class="banner"><b>Family History Month</b> · Save up to 54% <span class="shop">Shop</span></div>
+<div class="banner"><b>Family History Month</b> Â· Save up to 54% <span class="shop">Shop</span></div>
 <div class="nav"><div class="ham"></div><img src="pdp-img/logo.svg" alt="ethos"><div style="width:22px"></div></div>
 <div class="pad">
  <img class="main" src="pdp-img/gallery-open-spread-hands.opt.webp" alt="">
  <div class="thumbs"><img class="on" src="pdp-img/gallery-open-spread-hands.opt.webp"><img src="pdp-img/tile-7-books.jpg"><img src="pdp-img/gallery-mom-holding-book.opt.webp"><img src="pdp-img/love-we-kept-cover.webp"><img src="pdp-img/tile-2-book.jpg"></div>
- <div class="tp"><div class="stars"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div><b>Excellent</b> · 312 reviews</div>
+ <div class="tp"><div class="stars"><i>â</i><i>â</i><i>â</i><i>â</i><i>â</i></div><b>Excellent</b> Â· 312 reviews</div>
  <h1 class="t">The Life Story Book</h1>
  <p class="sub">One question a week, answered by phone. Printed as a hardcover memoir in their words.</p>
  <div class="price"><span class="now">$89</span><span class="was">$193</span><span class="tag save">Save $104</span></div>
@@ -71,56 +72,57 @@ h1.t{font-family:var(--display);font-weight:500;font-size:30px;line-height:1.08;
   <div class="tile"><div class="m">12 months</div><div class="p">$127</div><div class="pm">$10.58 / mo</div><div class="was">$248</div></div>
  </div>
  <ul class="inc"><li>1 hardcover book ($69)</li><li>Unlimited color photos</li><li>Weekly questions by email</li><li>E-book and audio copy</li></ul>
- <div class="cta"><span class="ar">→</span>Start my book</div>
- <div class="trust"><div><em>✓</em>30 day money back</div><div><em>✓</em>Cancel any time</div><div><em>✓</em>Secure</div></div>
+ <div class="subnote"><i>↻</i><div><b>This is a subscription.</b> $89 covers your first 6 months. After that it continues month to month until your book is finished. Cancel any time.</div></div>
+  <div class="cta"><span class="ar">â</span>Start my book</div>
+ <div class="trust"><div><em>â</em>30 day money back</div><div><em>â</em>Cancel any time</div><div><em>â</em>Secure</div></div>
  <div class="pay"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>Apple Pay</span><span>G Pay</span><span>PayPal</span></div>
- <p class="fine">First 6 months $89, then month to month until your book is finished. <u>Subscription policy</u></p>
 </div></div></div></div>
 
 <div class="cell"><div class="head"><div class="letter">C</div><h2>Per month</h2></div>
 <div class="phone"><div class="site">
-<div class="banner"><b>Family History Month</b> · Save up to 54% <span class="shop">Shop</span></div>
+<div class="banner"><b>Family History Month</b> Â· Save up to 54% <span class="shop">Shop</span></div>
 <div class="nav"><div class="ham"></div><img src="pdp-img/logo.svg" alt="ethos"><div style="width:22px"></div></div>
 <div class="pad">
  <div class="gal2"><img class="big" src="pdp-img/gallery-open-spread-hands.opt.webp"><img src="pdp-img/gallery-mom-holding-book.opt.webp" style="object-position:center 15%"><img src="pdp-img/tile-7-books.jpg"></div>
- <div class="tp"><div class="stars"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div><b>Excellent</b> on Trustpilot</div>
+ <div class="tp"><div class="stars"><i>â</i><i>â</i><i>â</i><i>â</i><i>â</i></div><b>Excellent</b> on Trustpilot</div>
  <h1 class="t">The Life Story Book</h1>
  <p class="sub">A professional memoir, written from one spoken answer a week.</p>
  <div class="bigpm"><span class="n">$14.83</span><span class="u">a month</span></div>
  <div class="pricenote">$89 today for 6 months. Book included. <s>$193</s></div>
  <div class="rows">
-  <div class="row"><div class="radio"></div><div class="l"><b>3 months</b><span>A short memoir</span></div><div class="r"><b>$22.67 /mo</b><span>$68 today · <s>$98</s></span></div></div>
-  <div class="row on"><div class="radio"></div><div class="l"><b>6 months</b><span>Most families finish here</span></div><div class="r"><b>$14.83 /mo</b><span>$89 today · <s>$193</s></span></div></div>
-  <div class="row"><div class="radio"></div><div class="l"><b>12 months</b><span>A full life</span></div><div class="r"><b>$10.58 /mo</b><span>$127 today · <s>$248</s></span></div></div>
+  <div class="row"><div class="radio"></div><div class="l"><b>3 months</b><span>A short memoir</span></div><div class="r"><b>$22.67 /mo</b><span>$68 today Â· <s>$98</s></span></div></div>
+  <div class="row on"><div class="radio"></div><div class="l"><b>6 months</b><span>Most families finish here</span></div><div class="r"><b>$14.83 /mo</b><span>$89 today Â· <s>$193</s></span></div></div>
+  <div class="row"><div class="radio"></div><div class="l"><b>12 months</b><span>A full life</span></div><div class="r"><b>$10.58 /mo</b><span>$127 today Â· <s>$248</s></span></div></div>
  </div>
- <div class="cta"><span class="ar">→</span>Start my book, $89</div>
- <div class="trust"><div><em>✓</em>30 day money back</div><div><em>✓</em>Cancel any time</div><div><em>✓</em>Secure</div></div>
- <div class="benefits"><div><i>📖</i>Hardcover included, unlimited color photos</div><div><i>📞</i>Answer by phone, nothing to type</div></div>
- <p class="fine">After 6 months it continues month to month until your book is finished. Cancel any time.</p>
+ <div class="subnote"><i>↻</i><div><b>This is a subscription.</b> $89 today covers 6 months. Then it continues month to month until your book is finished. Cancel any time.</div></div>
+  <div class="cta"><span class="ar">â</span>Start my book, $89</div>
+ <div class="trust"><div><em>â</em>30 day money back</div><div><em>â</em>Cancel any time</div><div><em>â</em>Secure</div></div>
+ <div class="benefits"><div><i>ð</i>Hardcover included, unlimited color photos</div><div><i>ð</i>Answer by phone, nothing to type</div></div>
 </div></div></div></div>
 
 <div class="cell"><div class="head"><div class="letter">D</div><h2>Plain words, gift on page</h2></div>
 <div class="phone"><div class="site">
-<div class="banner"><b>Family History Month</b> · Save up to 54% <span class="shop">Shop</span></div>
+<div class="banner"><b>Family History Month</b> Â· Save up to 54% <span class="shop">Shop</span></div>
 <div class="nav"><div class="ham"></div><img src="pdp-img/logo.svg" alt="ethos"><div style="width:22px"></div></div>
 <div class="pad">
  <img class="main" src="pdp-img/gallery-mom-holding-book.opt.webp" alt="">
  <div class="thumbs"><img class="on" src="pdp-img/gallery-mom-holding-book.opt.webp"><img src="pdp-img/gallery-open-spread-hands.opt.webp"><img src="pdp-img/love-we-kept-cover.webp"><img src="pdp-img/tile-2-book.jpg"><img src="pdp-img/tile-7-books.jpg"></div>
  <h1 class="t" style="margin-top:14px">The Life Story Book</h1>
- <div class="tp" style="margin:0 0 12px"><div class="stars"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div><b>Excellent</b> · 2,400 families</div>
+ <div class="tp" style="margin:0 0 12px"><div class="stars"><i>â</i><i>â</i><i>â</i><i>â</i><i>â</i></div><b>Excellent</b> Â· 2,400 families</div>
  <div class="price"><span class="now">$89</span><span class="was">$193</span><span class="tag save">You save $104</span></div>
  <div class="pricenote" style="margin-bottom:14px">Hardcover book, 6 months of weekly questions, unlimited photos in color.</div>
  <p class="lbl">Who is the book about?</p>
- <div class="who"><div class="on"><div class="ic">🙋</div><div><b>Myself</b><span>I answer the questions</span></div></div><div><div class="ic">🎁</div><div><b>A gift</b><span>Mom, Dad, a grandparent</span></div></div></div>
+ <div class="who"><div class="on"><div class="ic">ð</div><div><b>Myself</b><span>I answer the questions</span></div></div><div><div class="ic">ð</div><div><b>A gift</b><span>Mom, Dad, a grandparent</span></div></div></div>
  <p class="lbl">How long do they write?</p>
  <div class="rows" style="margin-top:0">
   <div class="row"><div class="radio"></div><div class="l"><b>3 months</b><span>A short book</span></div><div class="r"><b>$68</b><s>$98</s></div></div>
   <div class="row on"><div class="radio"></div><div class="l"><b>6 months</b><span>Most families choose this</span></div><div class="r"><b>$89</b><s>$193</s></div></div>
   <div class="row"><div class="radio"></div><div class="l"><b>12 months</b><span>A full life story</span></div><div class="r"><b>$127</b><s>$248</s></div></div>
  </div>
- <div class="cta"><span class="ar">→</span>Start my book</div>
- <div class="trust"><div><em>✓</em>30 day money back</div><div><em>✓</em>Cancel any time</div><div><em>✓</em>Secure</div></div>
- <div class="guar"><span class="sh">🛡️</span><div><b>30 day money back guarantee</b>No questions asked.</div></div>
+ <div class="subnote"><i>↻</i><div><b>This is a subscription.</b> $89 covers the first 6 months. After that it continues month to month until the book is finished. Cancel any time.</div></div>
+  <div class="cta"><span class="ar">â</span>Start my book</div>
+ <div class="trust"><div><em>â</em>30 day money back</div><div><em>â</em>Cancel any time</div><div><em>â</em>Secure</div></div>
+ <div class="guar"><span class="sh">ð¡ï¸</span><div><b>30 day money back guarantee</b>No questions asked.</div></div>
 </div></div></div></div>
 
 </div></div></body></html>
